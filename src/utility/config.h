@@ -2,31 +2,31 @@
 #define DYNAMIXEL_CONFIG_H_
 
 
-#define ENABLE_ACTUATOR_AX              1
+#define ENABLE_ACTUATOR_AX              0
 #define ENABLE_ACTUATOR_DX              0
 #define ENABLE_ACTUATOR_RX              0
 #define ENABLE_ACTUATOR_EX              0
-#define ENABLE_ACTUATOR_MX12W           1
-#define ENABLE_ACTUATOR_MX28            1
-#define ENABLE_ACTUATOR_MX64            1
-#define ENABLE_ACTUATOR_MX106           1
+#define ENABLE_ACTUATOR_MX12W           0
+#define ENABLE_ACTUATOR_MX28            0
+#define ENABLE_ACTUATOR_MX64            0
+#define ENABLE_ACTUATOR_MX106           0
 
-#define ENABLE_ACTUATOR_MX28_PROTOCOL2  1
-#define ENABLE_ACTUATOR_MX64_PROTOCOL2  1
-#define ENABLE_ACTUATOR_MX106_PROTOCOL2 1
+#define ENABLE_ACTUATOR_MX28_PROTOCOL2  0
+#define ENABLE_ACTUATOR_MX64_PROTOCOL2  0
+#define ENABLE_ACTUATOR_MX106_PROTOCOL2 0
 
-#define ENABLE_ACTUATOR_XL320           1
-#define ENABLE_ACTUATOR_XL430           1   //Includes 2XL430
-#define ENABLE_ACTUATOR_XC430           1   //Includes 2XC430
+#define ENABLE_ACTUATOR_XL320           0
+#define ENABLE_ACTUATOR_XL430           0   //Includes 2XL430
+#define ENABLE_ACTUATOR_XC430           0   //Includes 2XC430
 #define ENABLE_ACTUATOR_XM430           1
-#define ENABLE_ACTUATOR_XH430           1
-#define ENABLE_ACTUATOR_XM540           1
-#define ENABLE_ACTUATOR_XH540           1
-#define ENABLE_ACTUATOR_XW540           1
+#define ENABLE_ACTUATOR_XH430           0
+#define ENABLE_ACTUATOR_XM540           0
+#define ENABLE_ACTUATOR_XH540           0
+#define ENABLE_ACTUATOR_XW540           0
 
-#define ENABLE_ACTUATOR_PRO_R           1
-#define ENABLE_ACTUATOR_PRO_RA          1
-#define ENABLE_ACTUATOR_PRO_PLUS        1
+#define ENABLE_ACTUATOR_PRO_R           0
+#define ENABLE_ACTUATOR_PRO_RA          0
+#define ENABLE_ACTUATOR_PRO_PLUS        0
 
 
 #if defined (ARDUINO_AVR_UNO) || defined (ARDUINO_AVR_YUN) \
