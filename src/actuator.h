@@ -135,81 +135,81 @@
 #define XW540_T260          (uint16_t)1170
 #endif
 
-#ifndef PRO_L42_10_S300_R
-#define PRO_L42_10_S300_R   (uint16_t)35072
-#endif
-#ifndef PRO_L54_30_S400_R
-#define PRO_L54_30_S400_R   (uint16_t)37928
-#endif
-#ifndef PRO_L54_30_S500_R
-#define PRO_L54_30_S500_R   (uint16_t)37896
-#endif
-#ifndef PRO_L54_50_S290_R
-#define PRO_L54_50_S290_R   (uint16_t)38176
-#endif
-#ifndef PRO_L54_50_S500_R
-#define PRO_L54_50_S500_R   (uint16_t)38152
-#endif
+// #ifndef PRO_L42_10_S300_R
+// #define PRO_L42_10_S300_R   (uint16_t)35072
+// #endif
+// #ifndef PRO_L54_30_S400_R
+// #define PRO_L54_30_S400_R   (uint16_t)37928
+// #endif
+// #ifndef PRO_L54_30_S500_R
+// #define PRO_L54_30_S500_R   (uint16_t)37896
+// #endif
+// #ifndef PRO_L54_50_S290_R
+// #define PRO_L54_50_S290_R   (uint16_t)38176
+// #endif
+// #ifndef PRO_L54_50_S500_R
+// #define PRO_L54_50_S500_R   (uint16_t)38152
+// #endif
 
-#ifndef PRO_M42_10_S260_R
-#define PRO_M42_10_S260_R   (uint16_t)43288
-#endif
-#ifndef PRO_M54_40_S250_R
-#define PRO_M54_40_S250_R   (uint16_t)46096
-#endif
-#ifndef PRO_M54_60_S250_R
-#define PRO_M54_60_S250_R   (uint16_t)46352
-#endif
+// #ifndef PRO_M42_10_S260_R
+// #define PRO_M42_10_S260_R   (uint16_t)43288
+// #endif
+// #ifndef PRO_M54_40_S250_R
+// #define PRO_M54_40_S250_R   (uint16_t)46096
+// #endif
+// #ifndef PRO_M54_60_S250_R
+// #define PRO_M54_60_S250_R   (uint16_t)46352
+// #endif
 
-#ifndef PRO_H42_20_S300_R
-#define PRO_H42_20_S300_R   (uint16_t)51200
-#endif
-#ifndef PRO_H54_100_S500_R
-#define PRO_H54_100_S500_R  (uint16_t)53768
-#endif
-#ifndef PRO_H54_200_S500_R
-#define PRO_H54_200_S500_R  (uint16_t)54024
-#endif
+// #ifndef PRO_H42_20_S300_R
+// #define PRO_H42_20_S300_R   (uint16_t)51200
+// #endif
+// #ifndef PRO_H54_100_S500_R
+// #define PRO_H54_100_S500_R  (uint16_t)53768
+// #endif
+// #ifndef PRO_H54_200_S500_R
+// #define PRO_H54_200_S500_R  (uint16_t)54024
+// #endif
 
-#ifndef PRO_M42_10_S260_RA
-#define PRO_M42_10_S260_RA  (uint16_t)43289
-#endif
-#ifndef PRO_M54_40_S250_RA
-#define PRO_M54_40_S250_RA  (uint16_t)46097
-#endif
-#ifndef PRO_M54_60_S250_RA
-#define PRO_M54_60_S250_RA  (uint16_t)46353
-#endif
+// #ifndef PRO_M42_10_S260_RA
+// #define PRO_M42_10_S260_RA  (uint16_t)43289
+// #endif
+// #ifndef PRO_M54_40_S250_RA
+// #define PRO_M54_40_S250_RA  (uint16_t)46097
+// #endif
+// #ifndef PRO_M54_60_S250_RA
+// #define PRO_M54_60_S250_RA  (uint16_t)46353
+// #endif
 
-#ifndef PRO_H42_20_S300_RA
-#define PRO_H42_20_S300_RA  (uint16_t)51201
-#endif
-#ifndef PRO_H54_100_S500_RA
-#define PRO_H54_100_S500_RA (uint16_t)53761
-#endif
-#ifndef PRO_H54_200_S500_RA
-#define PRO_H54_200_S500_RA (uint16_t)54025
-#endif
+// #ifndef PRO_H42_20_S300_RA
+// #define PRO_H42_20_S300_RA  (uint16_t)51201
+// #endif
+// #ifndef PRO_H54_100_S500_RA
+// #define PRO_H54_100_S500_RA (uint16_t)53761
+// #endif
+// #ifndef PRO_H54_200_S500_RA
+// #define PRO_H54_200_S500_RA (uint16_t)54025
+// #endif
 
-#ifndef PRO_H42P_020_S300_R
-#define PRO_H42P_020_S300_R (uint16_t)2000
-#endif
-#ifndef PRO_H54P_100_S500_R
-#define PRO_H54P_100_S500_R (uint16_t)2010
-#endif
-#ifndef PRO_H54P_200_S500_R
-#define PRO_H54P_200_S500_R (uint16_t)2020
-#endif
+// #ifndef PRO_H42P_020_S300_R
+// #define PRO_H42P_020_S300_R (uint16_t)2000
+// #endif
+// #ifndef PRO_H54P_100_S500_R
+// #define PRO_H54P_100_S500_R (uint16_t)2010
+// #endif
+// #ifndef PRO_H54P_200_S500_R
+// #define PRO_H54P_200_S500_R (uint16_t)2020
+// #endif
 
-#ifndef PRO_M42P_010_S260_R
-#define PRO_M42P_010_S260_R (uint16_t)2100
-#endif
-#ifndef PRO_M54P_040_S250_R
-#define PRO_M54P_040_S250_R (uint16_t)2110
-#endif
-#ifndef PRO_M54P_060_S250_R
-#define PRO_M54P_060_S250_R (uint16_t)2120
-#endif
+// #ifndef PRO_M42P_010_S260_R
+// #define PRO_M42P_010_S260_R (uint16_t)2100
+// #endif
+// #ifndef PRO_M54P_040_S250_R
+// #define PRO_M54P_040_S250_R (uint16_t)2110
+// #endif
+// #ifndef PRO_M54P_060_S250_R
+// #define PRO_M54P_060_S250_R (uint16_t)2120
+// #endif
 
 namespace ControlTableItem{
   enum ControlTableItemIndex{

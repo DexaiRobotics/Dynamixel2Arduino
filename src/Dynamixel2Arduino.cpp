@@ -41,17 +41,17 @@ const uint16_t model_number_table[] PROGMEM = {
     XH540_V150,  XH540_V270, XH540_W150, XH540_W270,
     XW540_T140,  XW540_T260,
 
-    PRO_L42_10_S300_R,   
-    PRO_L54_30_S400_R,   PRO_L54_30_S500_R,   PRO_L54_50_S290_R,   PRO_L54_50_S500_R,
-    PRO_M42_10_S260_R,   PRO_M42_10_S260_RA,
-    PRO_M54_40_S250_R,   PRO_M54_40_S250_RA,  PRO_M54_60_S250_R,   PRO_M54_60_S250_RA,
-    PRO_H42_20_S300_R,   PRO_H42_20_S300_RA,
-    PRO_H54_100_S500_R,  PRO_H54_100_S500_RA, PRO_H54_200_S500_R,  PRO_H54_200_S500_RA,
+    // PRO_L42_10_S300_R,   
+    // PRO_L54_30_S400_R,   PRO_L54_30_S500_R,   PRO_L54_50_S290_R,   PRO_L54_50_S500_R,
+    // PRO_M42_10_S260_R,   PRO_M42_10_S260_RA,
+    // PRO_M54_40_S250_R,   PRO_M54_40_S250_RA,  PRO_M54_60_S250_R,   PRO_M54_60_S250_RA,
+    // PRO_H42_20_S300_R,   PRO_H42_20_S300_RA,
+    // PRO_H54_100_S500_R,  PRO_H54_100_S500_RA, PRO_H54_200_S500_R,  PRO_H54_200_S500_RA,
 
-    PRO_M42P_010_S260_R, 
-    PRO_M54P_040_S250_R, PRO_M54P_060_S250_R,
-    PRO_H42P_020_S300_R, 
-    PRO_H54P_100_S500_R, PRO_H54P_200_S500_R
+    // PRO_M42P_010_S260_R, 
+    // PRO_M54P_040_S250_R, PRO_M54P_060_S250_R,
+    // PRO_H42P_020_S300_R, 
+    // PRO_H54P_100_S500_R, PRO_H54P_200_S500_R
 };
 
 const uint8_t model_number_table_count = sizeof(model_number_table)/sizeof(model_number_table[0]);
@@ -355,94 +355,94 @@ bool Dynamixel2Arduino::setBaudrate(uint8_t id, uint32_t baudrate)
     // case PRO_L54_30_S500_R:
     // case PRO_L54_50_S290_R:
     // case PRO_L54_50_S500_R:
-    case PRO_M42_10_S260_R:
-    case PRO_M54_40_S250_R:
-    case PRO_M54_60_S250_R:
-    case PRO_H42_20_S300_R:
-    case PRO_H54_100_S500_R:
-    case PRO_H54_200_S500_R:
-      switch(baudrate)
-      {
-        case 9600:
-          baud_idx = 0;
-          break;
-        case 57600:
-          baud_idx = 1;
-          break;
-        case 115200:
-          baud_idx = 2;
-          break;
-        case 1000000:
-          baud_idx = 3;
-          break;
-        case 2000000:
-          baud_idx = 4;
-          break;
-        case 3000000:
-          baud_idx = 5;
-          break;
-        case 4000000:
-          baud_idx = 6;
-          break;
-        case 4500000:
-          baud_idx = 7;
-          break;
-        case 10500000:
-          baud_idx = 8;
-          break;
-        default:
-          return false;          
-      }
-      break;
+    // case PRO_M42_10_S260_R:
+    // case PRO_M54_40_S250_R:
+    // case PRO_M54_60_S250_R:
+    // case PRO_H42_20_S300_R:
+    // case PRO_H54_100_S500_R:
+    // case PRO_H54_200_S500_R:
+    //   switch(baudrate)
+    //   {
+    //     case 9600:
+    //       baud_idx = 0;
+    //       break;
+    //     case 57600:
+    //       baud_idx = 1;
+    //       break;
+    //     case 115200:
+    //       baud_idx = 2;
+    //       break;
+    //     case 1000000:
+    //       baud_idx = 3;
+    //       break;
+    //     case 2000000:
+    //       baud_idx = 4;
+    //       break;
+    //     case 3000000:
+    //       baud_idx = 5;
+    //       break;
+    //     case 4000000:
+    //       baud_idx = 6;
+    //       break;
+    //     case 4500000:
+    //       baud_idx = 7;
+    //       break;
+    //     case 10500000:
+    //       baud_idx = 8;
+    //       break;
+    //     default:
+    //       return false;          
+    //   }
+    //   break;
 
-    case PRO_M42_10_S260_RA:
-    case PRO_M54_40_S250_RA:
-    case PRO_M54_60_S250_RA:
-    case PRO_H42_20_S300_RA:
-    case PRO_H54_100_S500_RA:
-    case PRO_H54_200_S500_RA:
-    case PRO_H42P_020_S300_R:
-    case PRO_H54P_100_S500_R:
-    case PRO_H54P_200_S500_R:
-    case PRO_M42P_010_S260_R:
-    case PRO_M54P_040_S250_R:
-    case PRO_M54P_060_S250_R:
-      switch(baudrate)
-      {
-        case 9600:
-          baud_idx = 0;
-          break;
-        case 57600:
-          baud_idx = 1;
-          break;
-        case 115200:
-          baud_idx = 2;
-          break;
-        case 1000000:
-          baud_idx = 3;
-          break;
-        case 2000000:
-          baud_idx = 4;
-          break;
-        case 3000000:
-          baud_idx = 5;
-          break;
-        case 4000000:
-          baud_idx = 6;
-          break;
-        case 4500000:
-          baud_idx = 7;
-          break;
-        case 6000000:
-          baud_idx = 8;
-          break;          
-        case 10500000:
-          baud_idx = 9;
-          break;          
-        default:
-          return false;          
-      }                
-      break;
+    // case PRO_M42_10_S260_RA:
+    // case PRO_M54_40_S250_RA:
+    // case PRO_M54_60_S250_RA:
+    // case PRO_H42_20_S300_RA:
+    // case PRO_H54_100_S500_RA:
+    // case PRO_H54_200_S500_RA:
+    // case PRO_H42P_020_S300_R:
+    // case PRO_H54P_100_S500_R:
+    // case PRO_H54P_200_S500_R:
+    // case PRO_M42P_010_S260_R:
+    // case PRO_M54P_040_S250_R:
+    // case PRO_M54P_060_S250_R:
+    //   switch(baudrate)
+    //   {
+    //     case 9600:
+    //       baud_idx = 0;
+    //       break;
+    //     case 57600:
+    //       baud_idx = 1;
+    //       break;
+    //     case 115200:
+    //       baud_idx = 2;
+    //       break;
+    //     case 1000000:
+    //       baud_idx = 3;
+    //       break;
+    //     case 2000000:
+    //       baud_idx = 4;
+    //       break;
+    //     case 3000000:
+    //       baud_idx = 5;
+    //       break;
+    //     case 4000000:
+    //       baud_idx = 6;
+    //       break;
+    //     case 4500000:
+    //       baud_idx = 7;
+    //       break;
+    //     case 6000000:
+    //       baud_idx = 8;
+    //       break;          
+    //     case 10500000:
+    //       baud_idx = 9;
+    //       break;          
+    //     default:
+    //       return false;          
+    //   }                
+    //   break;
 
     default:
       return false;
@@ -491,26 +491,26 @@ bool Dynamixel2Arduino::setLedState(uint8_t id, bool state)
     // case PRO_L54_30_S500_R:
     // case PRO_L54_50_S290_R:
     // case PRO_L54_50_S500_R:
-    case PRO_M42_10_S260_R:
-    case PRO_M54_40_S250_R:
-    case PRO_M54_60_S250_R:
-    case PRO_H42_20_S300_R:
-    case PRO_H54_100_S500_R:
-    case PRO_H54_200_S500_R:
-    case PRO_M42_10_S260_RA:
-    case PRO_M54_40_S250_RA:
-    case PRO_M54_60_S250_RA:
-    case PRO_H42_20_S300_RA:
-    case PRO_H54_100_S500_RA:
-    case PRO_H54_200_S500_RA:
-    case PRO_H42P_020_S300_R:
-    case PRO_H54P_100_S500_R:
-    case PRO_H54P_200_S500_R:
-    case PRO_M42P_010_S260_R:
-    case PRO_M54P_040_S250_R:
-    case PRO_M54P_060_S250_R:
-      ret = writeControlTableItem(ControlTableItem::LED_RED, id, state);
-      break;
+    // case PRO_M42_10_S260_R:
+    // case PRO_M54_40_S250_R:
+    // case PRO_M54_60_S250_R:
+    // case PRO_H42_20_S300_R:
+    // case PRO_H54_100_S500_R:
+    // case PRO_H54_200_S500_R:
+    // case PRO_M42_10_S260_RA:
+    // case PRO_M54_40_S250_RA:
+    // case PRO_M54_60_S250_RA:
+    // case PRO_H42_20_S300_RA:
+    // case PRO_H54_100_S500_RA:
+    // case PRO_H54_200_S500_RA:
+    // case PRO_H42P_020_S300_R:
+    // case PRO_H54P_100_S500_R:
+    // case PRO_H54P_200_S500_R:
+    // case PRO_M42P_010_S260_R:
+    // case PRO_M54P_040_S250_R:
+    // case PRO_M54P_060_S250_R:
+      // ret = writeControlTableItem(ControlTableItem::LED_RED, id, state);
+      // break;
 
     default:
       ret = writeControlTableItem(ControlTableItem::LED, id, state);
@@ -652,47 +652,47 @@ bool Dynamixel2Arduino::setOperatingMode(uint8_t id, uint8_t mode)
     // case PRO_L54_30_S500_R:
     // case PRO_L54_50_S290_R:
     // case PRO_L54_50_S500_R:
-    case PRO_M42_10_S260_R:
-    case PRO_M54_40_S250_R:
-    case PRO_M54_60_S250_R:
-    case PRO_H42_20_S300_R:
-    case PRO_H54_100_S500_R:
-    case PRO_H54_200_S500_R:
-      if(mode == OP_POSITION){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 3);
-      }else if(mode == OP_VELOCITY){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 1);
-      }else if(mode == OP_EXTENDED_POSITION){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 4);
-      }else if(mode == OP_CURRENT){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 0);
-      }
-      break;
+    // case PRO_M42_10_S260_R:
+    // case PRO_M54_40_S250_R:
+    // case PRO_M54_60_S250_R:
+    // case PRO_H42_20_S300_R:
+    // case PRO_H54_100_S500_R:
+    // case PRO_H54_200_S500_R:
+    //   if(mode == OP_POSITION){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 3);
+    //   }else if(mode == OP_VELOCITY){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 1);
+    //   }else if(mode == OP_EXTENDED_POSITION){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 4);
+    //   }else if(mode == OP_CURRENT){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 0);
+    //   }
+    //   break;
 
-    case PRO_M42_10_S260_RA:
-    case PRO_M54_40_S250_RA:
-    case PRO_M54_60_S250_RA:
-    case PRO_H42_20_S300_RA:
-    case PRO_H54_100_S500_RA:
-    case PRO_H54_200_S500_RA:
-    case PRO_H42P_020_S300_R:
-    case PRO_H54P_100_S500_R:
-    case PRO_H54P_200_S500_R:
-    case PRO_M42P_010_S260_R:
-    case PRO_M54P_040_S250_R:
-    case PRO_M54P_060_S250_R:
-      if(mode == OP_POSITION){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 3);
-      }else if(mode == OP_VELOCITY){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 1);
-      }else if(mode == OP_EXTENDED_POSITION){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 4);
-      }else if(mode == OP_CURRENT){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 0);
-      }else if(mode == OP_PWM){
-        ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 16);
-      }
-      break;
+    // case PRO_M42_10_S260_RA:
+    // case PRO_M54_40_S250_RA:
+    // case PRO_M54_60_S250_RA:
+    // case PRO_H42_20_S300_RA:
+    // case PRO_H54_100_S500_RA:
+    // case PRO_H54_200_S500_RA:
+    // case PRO_H42P_020_S300_R:
+    // case PRO_H54P_100_S500_R:
+    // case PRO_H54P_200_S500_R:
+    // case PRO_M42P_010_S260_R:
+    // case PRO_M54P_040_S250_R:
+    // case PRO_M54P_060_S250_R:
+    //   if(mode == OP_POSITION){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 3);
+    //   }else if(mode == OP_VELOCITY){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 1);
+    //   }else if(mode == OP_EXTENDED_POSITION){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 4);
+    //   }else if(mode == OP_CURRENT){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 0);
+    //   }else if(mode == OP_PWM){
+    //     ret = writeControlTableItem(ControlTableItem::OPERATING_MODE, id, 16);
+    //   }
+    //   break;
       
     default:
       break;
@@ -1409,65 +1409,65 @@ static ItemAndRangeInfo_t getModelDependencyFuncInfo(uint16_t model_num, uint8_t
     // case PRO_L54_30_S500_R:
     // case PRO_L54_50_S290_R:
     // case PRO_L54_50_S500_R:
-    case PRO_M42_10_S260_R:
-      p_common_ctable = dependency_pro_r_m42_10;
-      break;    
+    // case PRO_M42_10_S260_R:
+    //   p_common_ctable = dependency_pro_r_m42_10;
+    //   break;    
 
-    case PRO_M54_40_S250_R:
-      p_common_ctable = dependency_pro_r_m54_40;
-      break;  
+    // case PRO_M54_40_S250_R:
+    //   p_common_ctable = dependency_pro_r_m54_40;
+    //   break;  
 
-    case PRO_M54_60_S250_R:
-      p_common_ctable = dependency_pro_r_m54_60;
-      break;  
+    // case PRO_M54_60_S250_R:
+    //   p_common_ctable = dependency_pro_r_m54_60;
+    //   break;  
 
-    case PRO_H42_20_S300_R:
-      p_common_ctable = dependency_pro_r_h42_20;
-      break;   
+    // case PRO_H42_20_S300_R:
+    //   p_common_ctable = dependency_pro_r_h42_20;
+    //   break;   
 
-    case PRO_H54_100_S500_R:
-      p_common_ctable = dependency_pro_r_h54_100;
-      break;    
+    // case PRO_H54_100_S500_R:
+    //   p_common_ctable = dependency_pro_r_h54_100;
+    //   break;    
 
-    case PRO_H54_200_S500_R:
-      p_common_ctable = dependency_pro_r_h54_200;
-      break;
+    // case PRO_H54_200_S500_R:
+    //   p_common_ctable = dependency_pro_r_h54_200;
+    //   break;
     
-    case PRO_M42_10_S260_RA:    
-    case PRO_M42P_010_S260_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_m42_10;
-      break;
+    // case PRO_M42_10_S260_RA:    
+    // case PRO_M42P_010_S260_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_m42_10;
+    //   break;
 
-    case PRO_M54_40_S250_RA:
-    case PRO_M54P_040_S250_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_m54_40;
-      break;
+    // case PRO_M54_40_S250_RA:
+    // case PRO_M54P_040_S250_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_m54_40;
+    //   break;
 
-    case PRO_M54_60_S250_RA:
-    case PRO_M54P_060_S250_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_m54_60;
-      break;
+    // case PRO_M54_60_S250_RA:
+    // case PRO_M54P_060_S250_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_m54_60;
+    //   break;
 
-    case PRO_H42_20_S300_RA:
-    case PRO_H42P_020_S300_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_h42_20;
-      break;
+    // case PRO_H42_20_S300_RA:
+    // case PRO_H42P_020_S300_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_h42_20;
+    //   break;
 
-    case PRO_H54_100_S500_RA:  
-    case PRO_H54P_100_S500_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_h54_100;
-      break;
+    // case PRO_H54_100_S500_RA:  
+    // case PRO_H54P_100_S500_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_h54_100;
+    //   break;
 
-    case PRO_H54_200_S500_RA:
-    case PRO_H54P_200_S500_R:
-      p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
-      p_dep_ctable = dependency_pro_ra_plus_h54_200;
-      break;
+    // case PRO_H54_200_S500_RA:
+    // case PRO_H54P_200_S500_R:
+    //   p_common_ctable = dependency_ctable_pro_ra_pro_plus_model;
+    //   p_dep_ctable = dependency_pro_ra_plus_h54_200;
+    //   break;
       
     default:
       break;

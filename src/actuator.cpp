@@ -510,29 +510,29 @@ ControlTableItemInfo_t DYNAMIXEL::getControlTableItemInfo(uint16_t model_num, ui
     // case PRO_L54_30_S500_R:
     // case PRO_L54_50_S290_R:
     // case PRO_L54_50_S500_R:
-    case PRO_M42_10_S260_R:
-    case PRO_M54_40_S250_R:
-    case PRO_M54_60_S250_R:
-    case PRO_H42_20_S300_R:
-    case PRO_H54_100_S500_R:
-    case PRO_H54_200_S500_R:
-      p_common_ctable = pro_r_control_table;
-      break;
+    // case PRO_M42_10_S260_R:
+    // case PRO_M54_40_S250_R:
+    // case PRO_M54_60_S250_R:
+    // case PRO_H42_20_S300_R:
+    // case PRO_H54_100_S500_R:
+    // case PRO_H54_200_S500_R:
+    //   p_common_ctable = pro_r_control_table;
+    //   break;
 
-    case PRO_M42_10_S260_RA:
-    case PRO_M54_40_S250_RA:
-    case PRO_M54_60_S250_RA:
-    case PRO_H42_20_S300_RA:
-    case PRO_H54_100_S500_RA:
-    case PRO_H54_200_S500_RA:
-    case PRO_H42P_020_S300_R:
-    case PRO_H54P_100_S500_R:
-    case PRO_H54P_200_S500_R:
-    case PRO_M42P_010_S260_R:
-    case PRO_M54P_040_S250_R:
-    case PRO_M54P_060_S250_R:
-      p_common_ctable = pro_ra_pro_plus_control_table;
-      break;
+    // case PRO_M42_10_S260_RA:
+    // case PRO_M54_40_S250_RA:
+    // case PRO_M54_60_S250_RA:
+    // case PRO_H42_20_S300_RA:
+    // case PRO_H54_100_S500_RA:
+    // case PRO_H54_200_S500_RA:
+    // case PRO_H42P_020_S300_R:
+    // case PRO_H54P_100_S500_R:
+    // case PRO_H54P_200_S500_R:
+    // case PRO_M42P_010_S260_R:
+    // case PRO_M54P_040_S250_R:
+    // case PRO_M54P_060_S250_R:
+    //   p_common_ctable = pro_ra_pro_plus_control_table;
+    //   break;
       
     default:
       break;
